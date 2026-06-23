@@ -1,0 +1,9 @@
+node_modules/
+dist/
+src-backup-outer/
+AJ-Website-main/
+/*.mp4
+*.log
+.env
+.env.*
+!.env.example
