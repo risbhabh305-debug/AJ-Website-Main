@@ -1,6 +1,6 @@
 import React from 'react';
 import heroVideo from '../assets/hero-new.mp4';
-import mobileLogo from '../assets/hero-mobile-logo.png';
+import mobileLogo from '../assets/hero-logo.jpeg';
 
 const Hero = () => (
   <section className="relative h-[100svh] min-h-[32rem] overflow-hidden bg-black sm:min-h-0">
