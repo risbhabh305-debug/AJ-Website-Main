@@ -12,7 +12,7 @@ const HeroIntro = () => (
         <span className="mt-2 block italic text-gold">Crafting Excellence</span>
       </motion.h1>
       <motion.p className="mx-auto mt-7 max-w-2xl font-hero-body text-sm font-semibold leading-7 text-offwhite/85 sm:text-base sm:leading-8" initial={{ opacity: 0, y: 18 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.7, delay: 0.16 }}>
-        Trusted manufacturing partner for Goenka India and leading jewellery retailers.
+        Trusted manufacturing partner for leading jewellery retailers.
       </motion.p>
       <motion.div className="mt-9 flex flex-col justify-center gap-3 sm:flex-row sm:gap-4" initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.7, delay: 0.22 }}>
         <a href="#collections" className="rounded-full bg-gold px-7 py-3.5 text-sm font-semibold text-primary transition duration-300 hover:bg-[#dec184]">Explore Collections</a>
