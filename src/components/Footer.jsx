@@ -1,4 +1,5 @@
 import React from 'react';
+import footerLogo from '../assets/hero-mobile-logo.png';
 
 /**
  * Footer component: displays logo/name, links and contact details.
@@ -7,9 +8,9 @@ const Footer = () => {
   return (
     <footer className="bg-primary border-t border-gold/30 py-8 text-softGray">
       <div className="container mx-auto px-4 max-w-6xl flex flex-col md:flex-row justify-between items-center gap-6">
-        <div className="text-center md:text-left">
-          <h3 className="font-heading text-xl text-gold mb-2">Ankush Jewellers</h3>
-          <p className="text-sm">
+        <div className="flex max-w-sm flex-col items-center text-center md:items-start md:text-left">
+          <img src={footerLogo} alt="Ankush Jewellers" className="mb-3 w-44 object-contain sm:w-52" />
+          <p className="text-sm leading-6">
             Trusted B2B Diamond Jewellery Manufacturer · Serving India’s leading retailers
           </p>
         </div>
