@@ -9,6 +9,11 @@ const CraftsmanshipFilm = () => {
     const video = videoRef.current;
     if (!video) return undefined;
 
+    if (!('IntersectionObserver' in window)) {
+      video.play().catch(() => {});
+      return undefined;
+    }
+
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) video.play().catch(() => {});
@@ -42,6 +47,7 @@ const CraftsmanshipFilm = () => {
                 muted
                 loop
                 playsInline
+                preload="metadata"
                 aria-label="Ankush Jewellers craftsmanship film"
               >
                 <source src={craftsmanshipFilm} type="video/mp4" />

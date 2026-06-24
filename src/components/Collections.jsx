@@ -70,6 +70,7 @@ const Collections = () => {
                   muted
                   loop
                   playsInline
+                  preload="metadata"
                   aria-label={`${col.title} collection film`}
                 >
                   <source src={col.video} type="video/mp4" />
