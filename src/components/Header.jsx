@@ -6,7 +6,7 @@ import React, { useState } from 'react';
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const links = [
-    ['About', '#about'], ['Collections', '#collections'], ['Why Us', '#why'], ['Process', '#process'], ['Reviews', '#reviews'], ['Gallery', '#gallery'], ['Contact', '#contact'],
+    ['About', '#about'], ['Collections', '#collections'], ['Why Us', '#why'], ['Process', '#process'], ['Gallery', '#gallery'], ['Contact', '#contact'],
   ];
   const mobileLinks = links.slice(0, 3);
   const overflowLinks = links.slice(3);

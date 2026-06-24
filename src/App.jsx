@@ -10,7 +10,6 @@ import About from './components/About';
 import Collections from './components/Collections';
 import WhyChoose from './components/WhyChoose';
 import Process from './components/Process';
-import Legacy from './components/Legacy';
 import Gallery from './components/Gallery';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
@@ -50,7 +49,6 @@ function App() {
       <Collections />
       <WhyChoose />
       <Process />
-      <Legacy />
       <Gallery onInquire={handleInquiry} selectedPieces={selectedPieces} />
       <Contact
         selectedPieces={selectedPieces}
