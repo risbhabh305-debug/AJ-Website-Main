@@ -3,10 +3,10 @@ import { motion } from 'framer-motion';
 
 // Import images from assets folder. These images were provided by the user.
 import ringsImg from '../assets/design5.jpg';
-import earringsImg from '../assets/earrings.jpg';
-import pendantsImg from '../assets/design6.jpg';
+import earringsImg from '../assets/collection-earrings.jpg';
+import pendantsImg from '../assets/collection-pendant.png';
 import necklacesImg from '../assets/design2.jpg';
-import banglesVideo from '../assets/bangles.mp4';
+import banglesImg from '../assets/collection-bangles.jpeg';
 import bridalImg from '../assets/design10.jpg';
 
 // Collection data: titles and local images sourced from assets.
@@ -29,7 +29,7 @@ const collections = [
   },
   {
     title: 'Bangles',
-    video: banglesVideo,
+    img: banglesImg,
   },
   {
     title: 'Bridal Collection',
@@ -63,25 +63,11 @@ const Collections = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: i * 0.1 }}
             >
-              {col.video ? (
-                <video
-                  className="h-52 w-full object-cover transition-transform duration-700 group-hover:scale-105 sm:h-72"
-                  autoPlay
-                  muted
-                  loop
-                  playsInline
-                  preload="metadata"
-                  aria-label={`${col.title} collection film`}
-                >
-                  <source src={col.video} type="video/mp4" />
-                </video>
-              ) : (
-                <div
-                  className="h-52 bg-cover bg-center transition-transform duration-700 transform group-hover:scale-105 sm:h-72"
-                  style={{ backgroundImage: `url(${col.img})` }}
-                  aria-label={col.title}
-                />
-              )}
+              <div
+                className="h-52 bg-cover bg-center transition-transform duration-700 transform group-hover:scale-105 sm:h-72"
+                style={{ backgroundImage: `url(${col.img})` }}
+                aria-label={col.title}
+              />
               <div className="absolute inset-0 bg-black bg-opacity-50 group-hover:bg-opacity-60 transition" />
               <h3 className="absolute bottom-3 left-3 text-sm font-semibold text-offwhite transition group-hover:text-gold sm:bottom-4 sm:left-4 sm:text-lg md:text-xl">
                 {col.title}
