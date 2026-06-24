@@ -71,12 +71,6 @@ const DiamondStory = () => {
           <p className="mt-6 max-w-xl text-base leading-7 text-softGray sm:text-lg sm:leading-8">
             From the first sketch to the final polish, every diamond is selected and set to give your collections a signature brilliance.
           </p>
-          <div className="mt-9 grid max-w-xl grid-cols-2 gap-x-8 gap-y-4 border-y border-gold/20 py-6 text-sm uppercase tracking-[0.16em] text-offwhite/85 sm:grid-cols-4">
-            <span>Round</span>
-            <span>Oval</span>
-            <span>Emerald</span>
-            <span>Pear</span>
-          </div>
           <a
             href="#collections"
             className="mt-9 inline-flex rounded-full border border-gold/80 px-7 py-3.5 text-sm font-semibold text-gold transition duration-300 hover:bg-gold hover:text-primary"
