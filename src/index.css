@@ -42,6 +42,26 @@ section[id] {
   height: 100vh;
 }
 
+.hero-brand-reveal,
+.hero-tagline-reveal {
+  opacity: 0;
+  animation: hero-brand-reveal 1.35s ease-out forwards;
+}
+
+.hero-tagline-reveal {
+  animation-delay: 0.45s;
+}
+
+@keyframes hero-brand-reveal {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
 @media (max-width: 639px) {
   .hero-viewport {
     min-height: min(32rem, 100vh);
@@ -102,5 +122,11 @@ section[id] {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
+  }
+
+  .hero-brand-reveal,
+  .hero-tagline-reveal {
+    animation: none;
+    opacity: 1;
   }
 }
