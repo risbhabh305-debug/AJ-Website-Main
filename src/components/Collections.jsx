@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 // Import images from assets folder. These images were provided by the user.
-import ringsImg from '../assets/design5.jpg';
+import ringsImg from '../assets/collection-ring.jpg';
 import earringsImg from '../assets/collection-earrings.jpg';
 import pendantsImg from '../assets/collection-pendant.png';
 import necklacesImg from '../assets/design2.jpg';

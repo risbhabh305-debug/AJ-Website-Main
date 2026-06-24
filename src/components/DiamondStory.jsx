@@ -49,7 +49,7 @@ const DiamondStory = () => {
               <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-black/45 via-transparent to-black/70" />
               <div className="pointer-events-none absolute inset-[14%] border border-offwhite/50" />
               <p className="absolute left-5 top-6 font-heading text-lg tracking-[0.18em] text-offwhite/90 sm:left-7 sm:top-8 sm:text-xl">
-                THE ANKUSH EDIT
+                THE EDIT
               </p>
               <p className="absolute bottom-6 left-5 right-5 font-heading text-3xl leading-tight text-offwhite sm:bottom-8 sm:left-7 sm:right-7 sm:text-4xl">
                 Every cut holds a story.
