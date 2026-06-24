@@ -70,7 +70,7 @@ const Collections = () => {
                 style={{ backgroundImage: `url(${col.img})` }}
                 aria-label={col.title}
               />
-              <div className="absolute inset-0 bg-black bg-opacity-50 group-hover:bg-opacity-60 transition" />
+              <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/90 via-black/35 to-black/10 transition group-hover:from-black/95 group-hover:via-black/45" />
               <h3 className="absolute bottom-3 left-3 text-sm font-semibold text-offwhite transition group-hover:text-gold sm:bottom-4 sm:left-4 sm:text-lg md:text-xl">
                 {col.title}
               </h3>
