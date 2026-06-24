@@ -12,23 +12,23 @@ import bridalImg from '../assets/design10.jpg';
 // Collection data: titles and local images sourced from assets.
 const collections = [
   {
-    title: 'Diamond Rings',
+    title: 'Diamond Ring',
     img: ringsImg,
   },
   {
-    title: 'Earrings',
+    title: 'Earring',
     img: earringsImg,
   },
   {
-    title: 'Pendants',
+    title: 'Pendant',
     img: pendantsImg,
   },
   {
-    title: 'Necklaces',
+    title: 'Necklace',
     img: necklacesImg,
   },
   {
-    title: 'Bangles',
+    title: 'Bangle',
     img: banglesImg,
   },
   {
