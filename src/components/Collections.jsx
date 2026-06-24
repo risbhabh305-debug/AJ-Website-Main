@@ -2,11 +2,11 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 // Import images from assets folder. These images were provided by the user.
-import ringsImg from '../assets/collection-ring.jpg';
+import ringsImg from '../assets/collection-ring.png';
 import earringsImg from '../assets/collection-earrings.jpg';
 import pendantsImg from '../assets/collection-pendant.png';
 import necklacesImg from '../assets/design2.jpg';
-import banglesImg from '../assets/collection-bangles.jpeg';
+import banglesImg from '../assets/collection-bangles.jpg';
 import bridalImg from '../assets/design10.jpg';
 
 // Collection data: titles and local images sourced from assets.
@@ -14,6 +14,7 @@ const collections = [
   {
     title: 'Diamond Ring',
     img: ringsImg,
+    imageClass: 'bg-contain bg-center bg-no-repeat bg-[#07101e]',
   },
   {
     title: 'Earrings',
@@ -30,6 +31,7 @@ const collections = [
   {
     title: 'Bangles',
     img: banglesImg,
+    imageClass: 'bg-contain bg-center bg-no-repeat bg-[#4b1c23]',
   },
   {
     title: 'Bridal Collection',
@@ -64,7 +66,7 @@ const Collections = () => {
               transition={{ duration: 0.8, delay: i * 0.1 }}
             >
               <div
-                className="h-52 bg-cover bg-center transition-transform duration-700 transform group-hover:scale-105 sm:h-72"
+                className={`h-52 transform transition-transform duration-700 sm:h-72 ${col.imageClass || 'bg-cover bg-center group-hover:scale-105'}`}
                 style={{ backgroundImage: `url(${col.img})` }}
                 aria-label={col.title}
               />
