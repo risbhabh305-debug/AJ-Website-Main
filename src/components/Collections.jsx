@@ -16,7 +16,7 @@ const collections = [
     img: ringsImg,
   },
   {
-    title: 'Earring',
+    title: 'Earrings',
     img: earringsImg,
   },
   {
@@ -28,7 +28,7 @@ const collections = [
     img: necklacesImg,
   },
   {
-    title: 'Bangle',
+    title: 'Bangles',
     img: banglesImg,
   },
   {
