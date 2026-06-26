@@ -13,7 +13,7 @@ const Contact = ({ selectedPieces, onRemoveSelection, onClearSelections }) => {
     event.preventDefault();
     setSubmissionStatus('sending');
     try {
-      const response = await fetch('https://formsubmit.co/ajax/305krishna2005@gmail.com', {
+      const response = await fetch('https://formsubmit.co/ajax/jewellersankush@gmail.com', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
         body: JSON.stringify({
@@ -52,8 +52,8 @@ const Contact = ({ selectedPieces, onRemoveSelection, onClearSelections }) => {
             <h3 className="mt-3 font-heading text-2xl text-offwhite">Visit our atelier</h3>
             <div className="mt-6 space-y-5 text-softGray">
               <div><p className="text-xs font-semibold uppercase tracking-[0.18em] text-gold">Address</p><p className="mt-2 leading-7">217, Amir Industrial Estate, Sunmill Compound, Sitaram Jadhav Marg, Lower Parel (W), Mumbai – 400013</p></div>
-              <div><p className="text-xs font-semibold uppercase tracking-[0.18em] text-gold">Phone</p><a href="tel:+918097988287" className="mt-2 inline-block font-heading text-xl text-offwhite transition hover:text-gold">+91 80979 88287</a></div>
-              <div><p className="text-xs font-semibold uppercase tracking-[0.18em] text-gold">Email</p><a href="mailto:305krishna2005@gmail.com" className="mt-2 inline-block break-all text-offwhite transition hover:text-gold">305krishna2005@gmail.com</a></div>
+              <div><p className="text-xs font-semibold uppercase tracking-[0.18em] text-gold">Phone</p><a href="tel:+919819616331" className="mt-2 inline-block font-heading text-xl text-offwhite transition hover:text-gold">+91 98196 16331</a></div>
+              <div><p className="text-xs font-semibold uppercase tracking-[0.18em] text-gold">Email</p><a href="mailto:jewellersankush@gmail.com" className="mt-2 inline-block break-all text-offwhite transition hover:text-gold">jewellersankush@gmail.com</a></div>
             </div>
           </div>
           <div className="overflow-hidden rounded-2xl border border-gold/25 bg-black">
@@ -69,7 +69,7 @@ const Contact = ({ selectedPieces, onRemoveSelection, onClearSelections }) => {
           <textarea required name="message" value={formData.message} onChange={handleChange} placeholder="Message" rows="4" className={`w-full rounded-lg ${inputClass}`} />
           {submissionStatus === 'success' && <p className="text-sm text-gold">Thank you—your enquiry has been sent.</p>}
           {submissionStatus === 'error' && <p className="text-sm text-red-300">We couldn’t send your enquiry. Please try again or use WhatsApp.</p>}
-          <div className="flex flex-col gap-4 sm:flex-row"><a href="https://wa.me/918097988287" target="_blank" rel="noopener noreferrer" className="flex-1 rounded-full bg-gold px-4 py-3 text-center font-medium text-primary transition hover:bg-opacity-90">WhatsApp Inquiry</a><a href="tel:+918097988287" className="flex-1 rounded-full border border-gold px-4 py-3 text-center font-medium text-gold transition hover:bg-gold hover:text-primary">Call Now</a><button type="submit" disabled={submissionStatus === 'sending'} className="flex-1 rounded-full border border-gold px-4 py-3 text-center font-medium text-gold transition hover:bg-gold hover:text-primary disabled:cursor-wait disabled:opacity-60">{submissionStatus === 'sending' ? 'Sending…' : 'Send Inquiry'}</button></div>
+          <div className="flex flex-col gap-4 sm:flex-row"><a href="https://wa.me/919819616331" target="_blank" rel="noopener noreferrer" className="touch-manipulation flex-1 rounded-full bg-gold px-4 py-3 text-center font-medium text-primary transition hover:bg-opacity-90">WhatsApp Inquiry</a><button type="submit" disabled={submissionStatus === 'sending'} className="touch-manipulation flex-1 rounded-full border border-gold px-4 py-3 text-center font-medium text-gold transition hover:bg-gold hover:text-primary disabled:cursor-wait disabled:opacity-60">{submissionStatus === 'sending' ? 'Sending…' : 'Send Inquiry'}</button></div>
         </motion.form>
       </div>
     </div>
