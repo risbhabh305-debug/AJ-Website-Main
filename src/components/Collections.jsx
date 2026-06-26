@@ -2,11 +2,11 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 // Import images from assets folder. These images were provided by the user.
-import ringsImg from '../assets/design5.jpg';
-import earringsImg from '../assets/earrings.jpg';
-import pendantsImg from '../assets/design6.jpg';
+import ringsImg from '../assets/collection-ring.png';
+import earringsImg from '../assets/collection-earrings.jpg';
+import pendantsImg from '../assets/collection-pendant.png';
 import necklacesImg from '../assets/design2.jpg';
-import banglesVideo from '../assets/bangles.mp4';
+import banglesImg from '../assets/collection-bangles.jpg';
 import bridalImg from '../assets/design10.jpg';
 
 // Collection data: titles and local images sourced from assets.
@@ -29,7 +29,7 @@ const collections = [
   },
   {
     title: 'Bangles',
-    video: banglesVideo,
+    img: banglesImg,
   },
   {
     title: 'Bridal Collection',
