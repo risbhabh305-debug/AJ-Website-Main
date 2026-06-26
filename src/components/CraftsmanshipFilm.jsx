@@ -9,6 +9,11 @@ const CraftsmanshipFilm = () => {
     const video = videoRef.current;
     if (!video) return undefined;
 
+    if (!('IntersectionObserver' in window)) {
+      video.play().catch(() => {});
+      return undefined;
+    }
+
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) video.play().catch(() => {});
@@ -42,6 +47,7 @@ const CraftsmanshipFilm = () => {
                 muted
                 loop
                 playsInline
+                preload="metadata"
                 aria-label="Ankush Jewellers craftsmanship film"
               >
                 <source src={craftsmanshipFilm} type="video/mp4" />
@@ -71,12 +77,6 @@ const CraftsmanshipFilm = () => {
           <p className="mt-6 max-w-xl text-base leading-7 text-softGray sm:text-lg sm:leading-8">
             Every stage of our process is guided by exacting detail, skilled hands and the confidence to create jewellery that endures.
           </p>
-          <div className="mt-9 grid max-w-xl grid-cols-2 gap-x-8 gap-y-4 border-y border-gold/20 py-6 text-sm uppercase tracking-[0.16em] text-offwhite/85 sm:grid-cols-4">
-            <span>Design</span>
-            <span>Setting</span>
-            <span>Polish</span>
-            <span>Finish</span>
-          </div>
           <a
             href="#contact"
             className="mt-9 inline-flex rounded-full border border-gold/80 px-7 py-3.5 text-sm font-semibold text-gold transition duration-300 hover:bg-gold hover:text-primary"

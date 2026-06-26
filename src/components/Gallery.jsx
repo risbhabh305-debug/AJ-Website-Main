@@ -26,9 +26,9 @@ const Gallery = ({ onInquire, selectedPieces }) => (
       <div className="mx-auto grid max-w-4xl grid-cols-2 gap-3 md:grid-cols-12 md:grid-rows-[280px_280px_300px] md:gap-4">
         {pieces.map((piece, index) => (
           <motion.article key={piece.title} className={`group relative min-h-[210px] overflow-hidden bg-black ${piece.className}`} initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.15 }} transition={{ duration: 0.7, delay: Math.min(index * 0.06, 0.24) }}>
-            <img src={piece.src} alt={piece.title} className={`h-full w-full object-cover transition duration-700 ease-out group-hover:scale-[1.045] md:absolute md:inset-0 ${piece.title === 'Heritage in Detail' ? 'object-[center_48%]' : ''}`} />
+            <img src={piece.src} alt={piece.title} loading={index > 1 ? 'lazy' : 'eager'} decoding="async" className={`h-full w-full object-cover transition duration-700 ease-out group-hover:scale-[1.045] md:absolute md:inset-0 ${piece.title === 'Heritage in Detail' ? 'object-[center_48%]' : ''}`} />
             <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/95 via-black/25 to-black/5" />
-            <button type="button" onClick={() => onInquire(piece)} className="absolute inset-0 z-10 flex items-center justify-center bg-black/25 text-sm font-semibold uppercase tracking-[0.22em] text-gold opacity-0 transition duration-300 hover:bg-black/50 group-hover:opacity-100 focus:opacity-100" aria-label={`Inquire about ${piece.title}`}>
+            <button type="button" onClick={() => onInquire(piece)} className="absolute inset-0 z-10 flex touch-manipulation items-center justify-center bg-black/25 text-sm font-semibold uppercase tracking-[0.22em] text-gold opacity-0 transition duration-300 hover:bg-black/50 group-hover:opacity-100 focus:opacity-100 active:opacity-100" aria-label={`Inquire about ${piece.title}`}>
               {selectedPieces.some((selectedPiece) => selectedPiece.title === piece.title) ? 'Added to inquiry' : 'Add to inquiry'}
             </button>
             <div className="absolute inset-x-0 bottom-0 p-5 sm:p-7">
