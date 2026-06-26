@@ -14,7 +14,7 @@ const collections = [
   {
     title: 'Diamond Ring',
     img: ringsImg,
-    imageClass: 'bg-contain bg-center bg-no-repeat bg-[#07101e]',
+    imageClass: 'bg-contain bg-center bg-no-repeat bg-[#07101e] group-hover:scale-105',
   },
   {
     title: 'Earrings',
@@ -31,7 +31,7 @@ const collections = [
   {
     title: 'Bangles',
     img: banglesImg,
-    imageClass: 'bg-contain bg-center bg-no-repeat bg-[#4b1c23]',
+    imageClass: 'bg-contain bg-center bg-no-repeat bg-[#4b1c23] group-hover:scale-105',
   },
   {
     title: 'Bridal Collection',
@@ -53,17 +53,19 @@ const Collections = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
-          Our Collections
+          Our Expertise
         </motion.h2>
         <div className="grid grid-cols-2 gap-4 sm:grid-cols-2 sm:gap-8 lg:grid-cols-3">
           {collections.map((col, i) => (
-            <motion.div
+            <motion.a
               key={col.title}
-              className="relative rounded-lg overflow-hidden group"
+              href="#contact"
+              className="relative block cursor-pointer rounded-lg overflow-hidden group focus:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2 focus-visible:ring-offset-primary"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: i * 0.1 }}
+              aria-label={`Inquire about ${col.title}`}
             >
               <div
                 className={`h-52 transform transition-transform duration-700 sm:h-72 ${col.imageClass || 'bg-cover bg-center group-hover:scale-105'}`}
@@ -76,7 +78,7 @@ const Collections = () => {
               </h3>
               {/* Soft gold glow on hover */}
               <div className="absolute inset-0 rounded-lg border-2 border-transparent group-hover:border-gold transition" />
-            </motion.div>
+            </motion.a>
           ))}
         </div>
       </div>
