@@ -24,7 +24,7 @@ const About = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          Ankush Jewellers is a trusted B2B diamond jewellery manufacturer, proudly serving India’s leading retailers for over 25 years. Our legacy is built on precision craftsmanship, premium quality and long-term partnerships. We specialise in creating exquisite diamond jewellery for brands and retailers who demand the very best. Our state-of-the-art manufacturing facilities and skilled artisans ensure every piece meets the highest standards of brilliance and durability. We deliver on time, every time, while maintaining the trust that only decades of experience can provide.
+          Ankush Jewellers is a trusted B2B diamond jewellery manufacturer, proudly serving India’s leading retailers for over 40 years. Our legacy is built on precision craftsmanship, premium quality and long-term partnerships. We specialise in creating exquisite diamond jewellery for brands and retailers who demand the very best. Our state-of-the-art manufacturing facilities and skilled artisans ensure every piece meets the highest standards of brilliance and durability. We deliver on time, every time, while maintaining the trust that only decades of experience can provide.
         </motion.p>
       </div>
     </section>
